@@ -1,0 +1,90 @@
+import { theme } from "../../components/ui/theme";
+const { makeStyles } = require("@material-ui/core");
+export const useStyle = makeStyles({
+    fitContent:{
+        width:"fit-content",
+    },
+    headerResp:{
+        [theme.breakpoints.down("md")]:{
+            textAlign:"center"
+        },
+        [theme.breakpoints.down("sm")]:
+        {fontSize:"2em",marginBottom:".7rem",textAlign:"center"},
+        [theme.breakpoints.down("xs")]:
+        {fontSize:"1.8em"},
+    },
+    marginLeft:{
+        marginLeft:"3rem",
+        [theme.breakpoints.down('sm')]:{
+            margin:"auto"
+        }
+    },
+    marginRight:{
+        marginRight:"3rem",
+        [theme.breakpoints.down('sm')]:{
+            margin:"auto"
+        }
+    }
+    ,
+    /////////////////////////////
+    whyDetails:{
+        marginBottom:".5rem",
+        [theme.breakpoints.down('sm')]:{textAlign:"center",fontSize:".8em"},
+        [theme.breakpoints.down('xs')]:{textAlign:"center",fontSize:".6em"},
+    },
+    whyContainer:{
+        maxWidth:"47%",
+        [theme.breakpoints.down('md')]:{maxWidth:"60%"},
+        [theme.breakpoints.down('sm')]:{maxWidth:"90%"},
+    },
+    whyIcons:{
+        fontSize:"3.5em",
+        color:theme.palette.secondary.main,
+        [theme.breakpoints.down("sm")]:{
+            fontSize:"3em",
+        }
+    },
+    whyIconsContainer:{
+        margin:"2rem 1.5rem",
+        [theme.breakpoints.down("sm")]:{
+            margin:"1rem 1rem",
+        },
+    },
+    Documentation:{
+        maxWidth:"250px",
+        [theme.breakpoints.down('sm')]:{
+            margin:"auto"
+        }
+    },
+    pie:{
+        fontSize:"14em",
+        marginRight:"-3rem",
+        [theme.breakpoints.down('md')]:{
+            margin:"auto",
+        }
+    },
+    /////////////////////////////////////////
+    ///////////////////////////////////
+    tree:{
+        textAlign:"center",
+        margin:"4rem 0",
+        padding:"1rem 20%",
+        [theme.breakpoints.down("sm")]:
+        {padding:"1rem 5%",margin:".5rem 0"},
+        [theme.breakpoints.down("xs")]:
+        {maxWidth:"15rem"}
+    },
+    treeImg:{
+        maxWidth:"20rem",
+        margin:"auto",
+        [theme.breakpoints.down("xs")]:
+        {maxWidth:"15rem"}
+    },
+    rootText:{
+        [theme.breakpoints.down("xs")]:
+        {
+            fontSize:".8em",
+            "&:first-child":{marginBottom:"10px"}
+        }
+    }
+})

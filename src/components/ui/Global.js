@@ -1,0 +1,49 @@
+import { makeStyles } from "@material-ui/core";
+import { theme } from "./theme";
+export const useGlobalStyle = makeStyles({
+    headerResp:{
+        [theme.breakpoints.down("md")]:{
+            fontSize:"1.8em"
+        },
+        [theme.breakpoints.down("sm")]:
+        {fontSize:"1.8em",marginBottom:".7rem",textAlign:"center"},
+        [theme.breakpoints.down("xs")]:
+        {fontSize:"1.7em"},
+    },
+    headerMediumResp:{
+        [theme.breakpoints.down("md")]:{
+            fontSize:"1.7em"
+        },
+        [theme.breakpoints.down("sm")]:
+        {fontSize:"1.7em",marginBottom:".7rem",textAlign:"center"},
+        [theme.breakpoints.down("xs")]:
+        {fontSize:"1.6em"},
+    },
+    sub2Resp:{
+        [theme.breakpoints.down("md")]:{
+            fontSize:"1em"
+        },
+        [theme.breakpoints.down("sm")]:{
+            fontSize:".9em",textAlign:"center"
+        },
+        [theme.breakpoints.down("xs")]:{
+            fontSize:".8em"
+        }
+    },
+    sub1Resp:{
+        [theme.breakpoints.down("xs")]:{
+            fontSize:".7em"
+        }
+    },
+    marginBottomSub:{
+        marginBottom:'.9rem',
+    },
+    body2:{
+        [theme.breakpoints.down("sm")]:{
+            fontSize:"1.3rem"
+        },
+        [theme.breakpoints.down("xs")]:{
+            fontSize:"1.2rem"
+        }
+    }
+})
